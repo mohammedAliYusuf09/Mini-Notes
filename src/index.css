@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.grid-art{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    row-gap: 1rem;
+}
+
+
+@media (min-width: 790px){
+    .grid-art{
+        column-gap: 1rem;
+    }
+}
+
